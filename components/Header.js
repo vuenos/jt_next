@@ -6,6 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -24,7 +25,11 @@ const Header = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             News
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Link href="/login">
+            <Button color="inherit">
+              Login
+            </Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>
